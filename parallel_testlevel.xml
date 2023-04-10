@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="ParallelExeceutionAtTestLevel"
+	parallel="tests">
+	<test name="Test1">
+		<classes>
+			<class name="testNGLearnNew.GroupsLearning" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test2">
+		<classes>
+			<class name="testNGLearnNew.GroupsSocial" />
+		</classes>
+	</test>
+
+	<test name="test3">
+		<classes>
+			<class name="testNGLearnNew.CloudProviders" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
+
+<!-- We an paralelism at 3 levels, 1. All the tests run parallely 2. All 
+	the classes run paralley 3. All the methods run parallely -->
